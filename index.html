@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Execute Webpage with JavaScript</title>
+</head>
+<body>
+    <h1 id="myHeading">Hello, World!</h1>
+    <button id="myButton">Click Me</button>
+
+    <script>
+        // JavaScript code to execute after the page has loaded
+        // You can access and manipulate the DOM here
+
+        // Get a reference to the heading and button elements
+        var heading = document.getElementById('myHeading');
+        var button = document.getElementById('myButton');
+
+        // Add an event listener to the button to change the heading text
+        button.addEventListener('click', function() {
+            heading.textContent = 'Webpage Executed!';
+        });
+    </script>
+</body>
+</html>
